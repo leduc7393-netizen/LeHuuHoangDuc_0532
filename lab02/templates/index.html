@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành An toàn thông tin nâng cao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+        }
+        .cipher-link {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        .cipher-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.15);
+        }
+        .logo-img {
+            max-width: 220px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark mb-5 shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1"><i class="fa-solid fa-shield-halved me-2"></i>ATTT Nâng Cao</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card main-card p-4 text-center">
+                    
+                    <div class="mb-4">
+                        <img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png" alt="hutech logo" class="logo-img">
+                    </div>
+                    
+                    <h4 class="fw-bold text-uppercase text-secondary mb-4 small tracking-wide">
+                        Bài Thực Hành Bảo Mật Thông Tin Nâng Cao
+                    </h4>
+                    
+                    <hr class="text-muted mb-4">
+                    
+                    <div class="d-grid gap-3">
+                        <a href="/caesar" class="btn btn-outline-primary p-3 text-start cipher-link d-flex align-content-center justify-content-between">
+                            <span><i class="fa-solid fa-key me-3 text-primary"></i>Caesar Cipher</span>
+                            <i class="fa-solid fa-chevron-right my-auto"></i>
+                        </a>
+                        <a href="/rsa" class="btn btn-outline-success p-3 text-start cipher-link d-flex align-content-center justify-content-between">
+                            <span><i class="fa-solid fa-user-lock me-3 text-success"></i>RSA Cipher</span>
+                            <i class="fa-solid fa-chevron-right my-auto"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
