@@ -4,17 +4,14 @@ from cipher.vigenere import VigenereCipher
 from cipher.railfence import RailFenceCipher
 from cipher.playfair import PlayFairCipher
 from cipher.transposition import TranspositionCipher
-
 app = Flask(__name__)
 
 # Khởi tạo các đối tượng mã hóa
 vigenere_cipher = VigenereCipher()
-transposition_cipher = TranspositionCipher()
 caesar_cipher = CaesarCipher()
 railfence_cipher = RailFenceCipher()
 playfair_cipher = PlayFairCipher()
-caesar_cipher = CaesarCipher()
-railfence_cipher = RailFenceCipher()
+transposition_cipher = TranspositionCipher()
 
 # ================= VIGENERE CIPHER ALGORITHM =================
 @app.route("/api/vigenere/encrypt", methods=['POST'])
